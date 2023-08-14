@@ -13,7 +13,7 @@ public class StrangerdangerApplication {
 		runStrangerDanger("See Spot run. See Spot jump. Spot likes jumping. See Spot fly.");
 		runStrangerDanger("I don't like apples. I don't like 'apples'. No I really don't like apples.");
 		runStrangerDanger(
-				"My friend is a friend of another friend wo used to be my friend. Sadly, he is no longer my friend.");
+				"My friend is a friend of another friend who used to be my friend. Sadly, he is no longer my friend.");
 	}
 
 	private static void runStrangerDanger(String sentence) {
