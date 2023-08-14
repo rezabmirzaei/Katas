@@ -4,7 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NumberOfBoomerangsApplicationTests {
+class NumberOfBoomerangsTest {
+
+	// TODO TEST
+	// Specially exceptions
 
 	@Test
 	void contextLoads() {

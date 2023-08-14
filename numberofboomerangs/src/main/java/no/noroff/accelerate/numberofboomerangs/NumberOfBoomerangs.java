@@ -4,14 +4,15 @@ import java.util.List;
 
 public class NumberOfBoomerangs {
 
-    public int countBoomerangs(List<Integer> arr) {
-        if (arr.isEmpty() || arr.size() < 3) {
+    public int countBoomerangs(List<Integer> numbers) {
+
+        if (numbers.isEmpty() || numbers.size() < 3) {
             throw new IllegalArgumentException("Array must have at least 3 elements");
         }
 
         int count = 0;
-        for (int i = 0; i < arr.size() - 2; i++) {
-            if (isBoomerang(arr.subList(i, i + 3))) {
+        for (int i = 0; i < numbers.size() - 2; i++) {
+            if (isBoomerang(numbers.subList(i, i + 3))) {
                 count++;
             }
         }
