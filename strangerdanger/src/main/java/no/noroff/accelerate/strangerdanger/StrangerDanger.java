@@ -22,7 +22,7 @@ public class StrangerDanger {
          * “I know, I'll use regular expressions.”
          * Now they have two problems.
          */
-        String[] words = input.replaceAll("[^a-zA-Z'\\s]|(?<!\\w)'|'(?![\\w])", "").toLowerCase().split("\\s+");
+        String[] words = input.replaceAll("[^a-zA-Z'\\s]|'(?![\\w])", "").toLowerCase().split("\\s+");
 
         Map<String, Integer> wordCountMap = new HashMap<>();
         List<String> acquaintances = new ArrayList<>();
