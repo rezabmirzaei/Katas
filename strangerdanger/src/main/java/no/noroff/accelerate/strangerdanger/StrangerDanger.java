@@ -14,14 +14,15 @@ public class StrangerDanger {
          * 
          * Using a regex, for the sake of demo, although completely unnecessary here.
          * 
-         * A regex (regulas expression) is a patterns that defines thestructure of strings.
+         * A regex (regulas expression) is a patterns that defines thestructure of
+         * strings.
          * Typically used in various for searching, matching, and manipulating text.
          * 
          * Some people, when confronted with a problem, think:
          * “I know, I'll use regular expressions.”
          * Now they have two problems.
          */
-        String[] words = input.replaceAll("[^a-zA-Z'\\s]", "").toLowerCase().split("\\s+");
+        String[] words = input.replaceAll("[^a-zA-Z'\\s]|(?<!\\w)'|'(?![\\w])", "").toLowerCase().split("\\s+");
 
         Map<String, Integer> wordCountMap = new HashMap<>();
         List<String> acquaintances = new ArrayList<>();
