@@ -33,11 +33,6 @@ public class StrangerDanger {
             wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
             int count = wordCountMap.get(word);
 
-            if (count == 3 && acquaintances.contains(word)) {
-                acquaintances.remove(word);
-                friends.add(word);
-            }
-
             if (count == 3 && !acquaintances.contains(word)) {
                 acquaintances.add(word);
             }
