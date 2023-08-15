@@ -20,7 +20,7 @@ public class NumberOfBoomerangsApplication {
 		// runNumberOfBoomerangs(Arrays.asList(1, 7, 1, 7, "one", 7, 1));
 	}
 
-	public static void runNumberOfBoomerangs(List<Integer> numbers) {
+	public static void runNumberOfBoomerangs(List<Object> numbers) {
 		NumberOfBoomerangs nob = new NumberOfBoomerangs();
 		int boomerangCount = nob.countBoomerangs(numbers);
 		System.out.println(String.format("%s -> %s", numbers, boomerangCount));
