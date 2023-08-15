@@ -7,7 +7,7 @@ public class NumberOfBoomerangs {
     public int countBoomerangs(List<Object> objList) {
 
         if (objList.isEmpty() || objList.size() < 3) {
-            throw new IllegalArgumentException("List must have at least 3 elements");
+            throw new IllegalArgumentException("List must contain minimum 3 elements");
         }
 
         for (Object obj : objList) {

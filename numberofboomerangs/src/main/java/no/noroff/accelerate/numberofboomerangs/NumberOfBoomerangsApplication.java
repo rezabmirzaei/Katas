@@ -15,9 +15,9 @@ public class NumberOfBoomerangsApplication {
 		runNumberOfBoomerangs(Arrays.asList(5, 6, 6, 7, 6, 3, 9));
 		runNumberOfBoomerangs(Arrays.asList(4, 4, 4, 9, 9, 9, 9));
 		runNumberOfBoomerangs(Arrays.asList(1, 7, 1, 7, 1, 7, 1));
-		runNumberOfBoomerangs(Arrays.asList());
-		runNumberOfBoomerangs(Arrays.asList(1, 7));
-		// runNumberOfBoomerangs(Arrays.asList(1, 7, 1, 7, "one", 7, 1));
+		// runNumberOfBoomerangs(Arrays.asList());
+		// runNumberOfBoomerangs(Arrays.asList(1, 7));
+		runNumberOfBoomerangs(Arrays.asList(1, 7, 1, 7, "one", 7, 1));
 	}
 
 	public static void runNumberOfBoomerangs(List<Object> numbers) {
