@@ -2,7 +2,18 @@ package no.noroff.accelerate.piglatin;
 
 public class PigLatinTranslator {
 
-    public String pigLatinWord(String word) {
+    public String translate(String sentence) {
+        String[] words = sentence.split(" ");
+        StringBuilder result = new StringBuilder();
+
+        for (String word : words) {
+            result.append(pigLatinWord(word)).append(" ");
+        }
+
+        return result.toString().trim();
+    }
+
+    private String pigLatinWord(String word) {
         if (word.isEmpty()) {
             return "";
         }
@@ -19,28 +30,17 @@ public class PigLatinTranslator {
         }
     }
 
-    private static boolean isVowel(char c) {
+    private boolean isVowel(char c) {
         return "aeiouAEIOU".indexOf(c) != -1;
     }
 
-    private static int getFirstVowelIndex(String word) {
+    private int getFirstVowelIndex(String word) {
         for (int i = 0; i < word.length(); i++) {
             if (isVowel(word.charAt(i))) {
                 return i;
             }
         }
         return -1;
-    }
-
-    public String pigLatinSentence(String sentence) {
-        String[] words = sentence.split(" ");
-        StringBuilder result = new StringBuilder();
-
-        for (String word : words) {
-            result.append(pigLatinWord(word)).append(" ");
-        }
-
-        return result.toString().trim();
     }
 
 }
